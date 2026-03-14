@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const pillars = [
   {
     title: 'Privacidade dos dados',
@@ -34,7 +36,15 @@ export function SecuritySection() {
           </div>
         </div>
 
-        <div className="card-soft min-h-72 bg-gradient-to-br from-slate-100 to-sky-50 p-6" />
+        <div className="card-soft relative min-h-72 overflow-hidden">
+          <Image
+            src="/images/seguranca-protecao-digital-1200x800.png"
+            alt="Ilustração sobre proteção digital e segurança de dados"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1024px) 40vw, 100vw"
+          />
+        </div>
       </div>
     </section>
   );
