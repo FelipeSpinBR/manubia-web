@@ -21,19 +21,19 @@ export function HowItWorksSection() {
   return (
     <section className="section-space" id="como-funciona">
       <div className="container-site">
-        <h2 className="text-3xl font-bold text-slate-900">Como funciona</h2>
-        <p className="mt-3 max-w-3xl text-lg text-slate-600">
+        <h2 className="text-3xl font-bold text-[#1f2d24]">Como funciona</h2>
+        <p className="mt-3 max-w-3xl text-lg text-[#5a6b61]">
           Um processo simples para ajudar sua família a entender melhor o dinheiro e tomar decisões com mais clareza.
         </p>
 
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
           {steps.map((step, index) => (
             <article key={step.title} className="card-soft p-6">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-100 text-sm font-semibold text-brand-700">
+              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#dff3e6] text-sm font-semibold text-[#0b6f3a]">
                 {index + 1}
               </span>
-              <h3 className="mt-4 text-xl font-semibold text-slate-900">{step.title}</h3>
-              <p className="mt-2 text-slate-600">{step.text}</p>
+              <h3 className="mt-4 text-xl font-semibold text-[#1f2d24]">{step.title}</h3>
+              <p className="mt-2 text-[#5a6b61]">{step.text}</p>
             </article>
           ))}
         </div>

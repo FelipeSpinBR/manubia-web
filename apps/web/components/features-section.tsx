@@ -19,22 +19,22 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="section-space bg-white" id="recursos">
+    <section className="section-space bg-[#ffffff]" id="recursos">
       <div className="container-site">
-        <h2 className="max-w-4xl text-3xl font-bold text-slate-900">
+        <h2 className="max-w-4xl text-3xl font-bold text-[#1f2d24]">
           Recursos pensados para trazer clareza, organização e apoio às decisões da família
         </h2>
-        <p className="mt-3 text-lg text-slate-600">
+        <p className="mt-3 text-lg text-[#5a6b61]">
           Mais do que acompanhar números, o ManubIA ajuda sua família a entender melhor a própria vida financeira.
         </p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {features.map((feature) => (
             <article key={feature.title} className="card-soft overflow-hidden">
-              <div className="h-40 bg-gradient-to-br from-sky-100 via-blue-50 to-indigo-100" />
+              <div className="h-40 bg-gradient-to-br from-[#dff3e6] via-[#edf7f0] to-[#cfead8]" />
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-slate-900">{feature.title}</h3>
-                <p className="mt-2 text-slate-600">{feature.text}</p>
+                <h3 className="text-lg font-semibold text-[#1f2d24]">{feature.title}</h3>
+                <p className="mt-2 text-[#5a6b61]">{feature.text}</p>
               </div>
             </article>
           ))}

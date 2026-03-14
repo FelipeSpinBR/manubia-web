@@ -17,7 +17,7 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section className="section-space bg-white">
+    <section className="section-space bg-[#ffffff]">
       <div className="container-site grid gap-10 lg:grid-cols-2">
         <div className="card-soft overflow-hidden min-h-[340px] p-0">
           <Image
@@ -30,7 +30,7 @@ export function BenefitsSection() {
         </div>
 
         <div>
-          <h2 className="text-3xl font-bold text-slate-900">
+          <h2 className="text-3xl font-bold text-[#1f2d24]">
             Mais clareza para a vida financeira da sua família
           </h2>
 
@@ -38,12 +38,12 @@ export function BenefitsSection() {
             {benefits.map((benefit) => (
               <article
                 key={benefit.title}
-                className="flex gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5"
+                className="flex gap-4 rounded-2xl border border-[#d7e7dc] bg-[#edf7f0] p-5"
               >
-                <div className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-500" />
+                <div className="mt-1 h-2.5 w-2.5 rounded-full bg-[#0f8f4b]" />
                 <div>
-                  <h3 className="font-semibold text-slate-900">{benefit.title}</h3>
-                  <p className="mt-1 text-slate-600">{benefit.text}</p>
+                  <h3 className="font-semibold text-[#1f2d24]">{benefit.title}</h3>
+                  <p className="mt-1 text-[#5a6b61]">{benefit.text}</p>
                 </div>
               </article>
             ))}
