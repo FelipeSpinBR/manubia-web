@@ -9,8 +9,8 @@ export default function RecursosPage() {
       <main>
         <section className="section-space pb-0">
           <div className="container-site">
-            <h1 className="text-4xl font-bold text-slate-900">Recursos</h1>
-            <p className="mt-4 max-w-3xl text-lg text-slate-600">
+            <h1 className="text-4xl font-bold text-[var(--text-primary)]">Recursos</h1>
+            <p className="mt-4 max-w-3xl text-lg text-[var(--text-secondary)]">
               Funcionalidades pensadas para trazer clareza, organização e confiança para a rotina financeira da sua família.
             </p>
           </div>

@@ -1,6 +1,13 @@
 import Image from 'next/image';
 
-const features = [
+type Feature = {
+  title: string;
+  text: string;
+  image?: string;
+  imageAlt?: string;
+};
+
+const features: Feature[] = [
   {
     title: 'Gastos por categoria com mais clareza',
     text: 'Veja onde estão os principais gastos da família e acompanhe os hábitos do dia a dia de forma mais visual e simples.',
@@ -27,13 +34,13 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="section-space bg-white" id="recursos">
+    <section className="section-space bg-[var(--surface)]" id="recursos">
       <div className="container-site">
-        <h2 className="max-w-4xl text-3xl font-bold text-slate-900">
+        <h2 className="max-w-4xl text-3xl font-bold text-[var(--text-primary)]">
           Recursos pensados para trazer clareza, organização e apoio às decisões da família
         </h2>
-        <p className="mt-3 text-lg text-slate-600">
-          Mais do que acompanhar números, o ManubIA ajuda sua família a entender melhor a própria vida financeira.
+        <p className="mt-3 text-lg text-[var(--text-secondary)]">
+          Mais do que acompanhar números, o manubIA.AI ajuda sua família a entender melhor a própria vida financeira.
         </p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -45,8 +52,8 @@ export function FeaturesSection() {
                 </div>
               ) : null}
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-slate-900">{feature.title}</h3>
-                <p className="mt-2 text-slate-600">{feature.text}</p>
+                <h3 className="text-lg font-semibold text-[var(--text-primary)]">{feature.title}</h3>
+                <p className="mt-2 text-[var(--text-secondary)]">{feature.text}</p>
               </div>
             </article>
           ))}

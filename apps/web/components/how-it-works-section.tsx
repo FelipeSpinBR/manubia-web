@@ -1,7 +1,7 @@
 const steps = [
   {
     title: 'Conecte suas contas',
-    text: 'Reúna em um só lugar as principais informações financeiras da família. O ManubIA foi pensado para facilitar esse começo e transformar dados espalhados em uma visão mais organizada do dia a dia.',
+    text: 'Reúna em um só lugar as principais informações financeiras da família. O manubIA.AI foi pensado para facilitar esse começo e transformar dados espalhados em uma visão mais organizada do dia a dia.',
   },
   {
     title: 'Veja seus gastos',
@@ -9,11 +9,11 @@ const steps = [
   },
   {
     title: 'Receba insights da IA',
-    text: 'O ManubIA analisa os dados e ajuda a identificar padrões, mudanças e oportunidades de melhoria. Assim, fica mais fácil perceber excessos, ajustar hábitos e cuidar melhor da rotina financeira.',
+    text: 'O manubIA.AI analisa os dados e ajuda a identificar padrões, mudanças e oportunidades de melhoria. Assim, fica mais fácil perceber excessos, ajustar hábitos e cuidar melhor da rotina financeira.',
   },
   {
     title: 'Planeje melhor a vida financeira',
-    text: 'Com mais clareza sobre a situação da família, o planejamento se torna mais leve e possível. O ManubIA ajuda a transformar acompanhamento em ação, apoiando decisões com mais segurança e tranquilidade.',
+    text: 'Com mais clareza sobre a situação da família, o planejamento se torna mais leve e possível. O manubIA.AI ajuda a transformar acompanhamento em ação, apoiando decisões com mais segurança e tranquilidade.',
   },
 ];
 
@@ -21,19 +21,19 @@ export function HowItWorksSection() {
   return (
     <section className="section-space" id="como-funciona">
       <div className="container-site">
-        <h2 className="text-3xl font-bold text-slate-900">Como funciona</h2>
-        <p className="mt-3 max-w-3xl text-lg text-slate-600">
+        <h2 className="text-3xl font-bold text-[var(--text-primary)]">Como funciona</h2>
+        <p className="mt-3 max-w-3xl text-lg text-[var(--text-secondary)]">
           Um processo simples para ajudar sua família a entender melhor o dinheiro e tomar decisões com mais clareza.
         </p>
 
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
           {steps.map((step, index) => (
             <article key={step.title} className="card-soft p-6">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-100 text-sm font-semibold text-brand-700">
+              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--primary-soft)] text-sm font-semibold text-[var(--primary)]">
                 {index + 1}
               </span>
-              <h3 className="mt-4 text-xl font-semibold text-slate-900">{step.title}</h3>
-              <p className="mt-2 text-slate-600">{step.text}</p>
+              <h3 className="mt-4 text-xl font-semibold text-[var(--text-primary)]">{step.title}</h3>
+              <p className="mt-2 text-[var(--text-secondary)]">{step.text}</p>
             </article>
           ))}
         </div>
