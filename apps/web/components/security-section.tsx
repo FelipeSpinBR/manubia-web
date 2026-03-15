@@ -11,7 +11,7 @@ const pillars = [
   },
   {
     title: 'Tratamento responsável',
-    text: 'O ManubIA nasce com o compromisso de lidar com dados financeiros de forma séria, cuidadosa e alinhada à LGPD.',
+    text: 'O manubIA.AI nasce com o compromisso de lidar com dados financeiros de forma séria, cuidadosa e alinhada à LGPD.',
   },
 ];
 
@@ -20,17 +20,17 @@ export function SecuritySection() {
     <section className="section-space">
       <div className="container-site grid gap-8 lg:grid-cols-[1.2fr_1fr]">
         <div>
-          <h2 className="text-3xl font-bold text-slate-900">Sua informação financeira protegida com seriedade</h2>
-          <p className="mt-4 max-w-3xl text-lg text-slate-600">
-            O ManubIA foi pensado para tratar informações financeiras com responsabilidade, clareza e respeito à privacidade, em
+          <h2 className="text-3xl font-bold text-[var(--text-primary)]">Sua informação financeira protegida com seriedade</h2>
+          <p className="mt-4 max-w-3xl text-lg text-[var(--text-secondary)]">
+            O manubIA.AI foi pensado para tratar informações financeiras com responsabilidade, clareza e respeito à privacidade, em
             linha com os princípios da LGPD.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {pillars.map((pillar) => (
               <article key={pillar.title} className="card-soft p-5">
-                <h3 className="font-semibold text-slate-900">{pillar.title}</h3>
-                <p className="mt-2 text-sm text-slate-600">{pillar.text}</p>
+                <h3 className="font-semibold text-[var(--text-primary)]">{pillar.title}</h3>
+                <p className="mt-2 text-sm text-[var(--text-secondary)]">{pillar.text}</p>
               </article>
             ))}
           </div>

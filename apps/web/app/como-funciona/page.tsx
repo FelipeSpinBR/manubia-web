@@ -9,8 +9,8 @@ export default function ComoFuncionaPage() {
       <main>
         <section className="section-space pb-0">
           <div className="container-site">
-            <h1 className="text-4xl font-bold text-slate-900">Como funciona</h1>
-            <p className="mt-4 max-w-3xl text-lg text-slate-600">
+            <h1 className="text-4xl font-bold text-[var(--text-primary)]">Como funciona</h1>
+            <p className="mt-4 max-w-3xl text-lg text-[var(--text-secondary)]">
               Um caminho simples para sua família organizar o dinheiro, enxergar padrões e planejar decisões com mais calma.
             </p>
           </div>

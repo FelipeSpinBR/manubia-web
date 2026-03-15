@@ -5,15 +5,15 @@ export function HeroSection() {
     <section className="section-space">
       <div className="container-site grid items-center gap-14 lg:grid-cols-2">
         <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-brand-600">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-[var(--primary)]">
             Organização financeira familiar
           </p>
 
-          <h1 className="text-4xl font-bold leading-tight text-slate-900 lg:text-5xl">
+          <h1 className="text-4xl font-bold leading-tight text-[var(--text-primary)] lg:text-5xl">
             Mais clareza e tranquilidade para a vida financeira da sua família
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--text-secondary)]">
             Com o apoio da IA, o ManubIA ajuda sua família a acompanhar gastos, organizar prioridades e cuidar melhor das
             decisões do dia a dia.
           </p>
@@ -21,16 +21,16 @@ export function HeroSection() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#"
-              className="rounded-full bg-brand-600 px-6 py-3 font-semibold text-white hover:bg-brand-700"
+              className="rounded-full bg-[var(--primary)] px-6 py-3 font-semibold text-white transition hover:bg-[var(--primary-hover)]"
             >
               Começar grátis
             </a>
 
             <a
               href="#"
-              className="rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 hover:bg-slate-100"
+              className="rounded-full border border-[var(--border)] bg-white px-6 py-3 font-semibold text-[var(--primary)] transition hover:bg-[var(--surface-soft)]"
             >
-              Conheça o ManubIA
+              Conheça o manubIA.AI
             </a>
           </div>
         </div>
