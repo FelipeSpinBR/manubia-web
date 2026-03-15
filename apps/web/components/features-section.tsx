@@ -40,7 +40,7 @@ export function FeaturesSection() {
           Recursos pensados para trazer clareza, organização e apoio às decisões da família
         </h2>
         <p className="mt-3 text-lg text-[var(--text-secondary)]">
-          Mais do que acompanhar números, o manubIA.AI ajuda sua família a entender melhor a própria vida financeira.
+          Mais do que acompanhar números, o ManubIA ajuda sua família a entender melhor a própria vida financeira.
         </p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">

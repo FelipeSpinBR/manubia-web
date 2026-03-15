@@ -14,7 +14,7 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--text-secondary)]">
-            Com o apoio da IA, o manubIA.AI ajuda sua família a acompanhar gastos, organizar prioridades e cuidar melhor das
+            Com o apoio da IA, o ManubIA ajuda sua família a acompanhar gastos, organizar prioridades e cuidar melhor das
             decisões do dia a dia.
           </p>
 
