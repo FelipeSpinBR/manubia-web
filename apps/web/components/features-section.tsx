@@ -3,8 +3,8 @@ import Image from 'next/image';
 type Feature = {
   title: string;
   text: string;
-  image?: string;
-  imageAlt?: string;
+  image: string;
+  imageAlt: string;
 };
 
 const features: Feature[] = [
@@ -29,12 +29,18 @@ const features: Feature[] = [
   {
     title: 'Insights da IA para apoiar suas decisões',
     text: 'Receba leituras mais inteligentes sobre a vida financeira da família, com ajuda para perceber padrões, excessos e oportunidades.',
+    image: '/images/recurso-insights-ia-1400x900.png',
+    imageAlt: 'Painel com insights inteligentes para decisões financeiras da família',
   },
 ];
 
-export function FeaturesSection() {
+type FeaturesSectionProps = {
+  compact?: boolean;
+};
+
+export function FeaturesSection({ compact = false }: FeaturesSectionProps) {
   return (
-    <section className="section-space bg-[var(--surface)]" id="recursos">
+    <section className={compact ? 'bg-[var(--surface)] py-10 lg:py-14' : 'section-space bg-[var(--surface)]'} id="recursos">
       <div className="container-site">
         <h2 className="max-w-4xl text-3xl font-bold text-[var(--text-primary)]">
           Recursos pensados para trazer clareza, organização e apoio às decisões da família
@@ -46,11 +52,9 @@ export function FeaturesSection() {
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {features.map((feature) => (
             <article key={feature.title} className="card-soft overflow-hidden">
-              {feature.image ? (
-                <div className="relative h-40">
-                  <Image src={feature.image} alt={feature.imageAlt ?? feature.title} fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
-                </div>
-              ) : null}
+              <div className="relative h-40">
+                <Image src={feature.image} alt={feature.imageAlt} fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+              </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-[var(--text-primary)]">{feature.title}</h3>
                 <p className="mt-2 text-[var(--text-secondary)]">{feature.text}</p>
