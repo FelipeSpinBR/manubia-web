@@ -17,9 +17,13 @@ const steps = [
   },
 ];
 
-export function HowItWorksSection() {
+type HowItWorksSectionProps = {
+  compact?: boolean;
+};
+
+export function HowItWorksSection({ compact = false }: HowItWorksSectionProps) {
   return (
-    <section className="section-space" id="como-funciona">
+    <section className={compact ? 'py-10 lg:py-14' : 'section-space'} id="como-funciona">
       <div className="container-site">
         <h2 className="text-3xl font-bold text-[var(--text-primary)]">Como funciona</h2>
         <p className="mt-3 max-w-3xl text-lg text-[var(--text-secondary)]">

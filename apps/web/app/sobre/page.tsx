@@ -5,7 +5,7 @@ export default function SobrePage() {
   return (
     <>
       <SiteHeader />
-      <main className="section-space">
+      <main className="pt-10 pb-12 lg:pt-14 lg:pb-16">
         <section className="container-site">
           <h1 className="text-4xl font-bold text-[var(--text-primary)]">Sobre o manubIA.AI</h1>
           <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--text-secondary)]">

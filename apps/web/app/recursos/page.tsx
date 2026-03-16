@@ -7,7 +7,7 @@ export default function RecursosPage() {
     <>
       <SiteHeader />
       <main>
-        <section className="section-space pb-0">
+        <section className="pt-10 pb-6 lg:pt-14 lg:pb-8">
           <div className="container-site">
             <h1 className="text-4xl font-bold text-[var(--text-primary)]">Recursos</h1>
             <p className="mt-4 max-w-3xl text-lg text-[var(--text-secondary)]">
@@ -15,7 +15,7 @@ export default function RecursosPage() {
             </p>
           </div>
         </section>
-        <FeaturesSection />
+        <FeaturesSection compact />
       </main>
       <SiteFooter />
     </>
